@@ -1,0 +1,89 @@
+body{
+    width: 100%;
+    height: 100vh;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 60%;
+    width: 100%;
+    background-image: url(/img/Image-empty-state.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portada{
+    height: 70%;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.808), rgba(0, 0, 0, 0));
+}
+nav.categorias{
+
+    height: 40%;
+    width: 100% auto;
+    background-color: rgb(167, 169, 169);
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30;
+    overflow: hidden;
+    overflow: scroll;
+}
+a.btn-cat{
+    height: 70px;
+    flex: 0 0 85px;
+    background-color: rgb(167, 169, 169);
+
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2;
+}
+.saludo{
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    transition: all 3s ease-in-out;
+}
+
+.buscador{
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+    left: 5%;
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    background-color: brown;
+    box-shadow: 0 10px 15px -5px black;
+    overflow: hidden;
+}
+.icono{
+    height: 100%;
+    width: 40px;
+    background-color: rgb(105, 105, 105);
+    display: grid;
+    place-items: center;
+}
+input[type=search]{
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: calc(100% - 80px);
+}
+
+input[type=submit]{
+    border: none;
+    outline: none;
+    width: 40px;
+    background-color: white;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    transform: scale(1.2);
+}
