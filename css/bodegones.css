@@ -6,6 +6,8 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 header{
     height: 60%;
@@ -22,7 +24,7 @@ header{
 }
 nav.categorias{
 
-    height: 40%;
+    height: 30%;
     width: 100% auto;
     background-color: rgb(167, 169, 169);
     padding: 30px;
@@ -31,13 +33,23 @@ nav.categorias{
     gap: 30;
     overflow: hidden;
     overflow: scroll;
+    overflow-y: hidden;
+    a :link{
+        color: red;
+    }
+    a :visited{
+        color: violet;
+    }
+    a :hover{
+        color: black;
+    }
+
 }
 a.btn-cat{
-    height: 70px;
+    height: 100px;
     flex: 0 0 85px;
     background-color: rgb(167, 169, 169);
 
-    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,10 +57,11 @@ a.btn-cat{
     font-size: 1.2;
 }
 .saludo{
+    font-size: 25px;
     position: absolute;
     left: 5%;
     bottom: 20%;
-    transition: all 3s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 .buscador{
@@ -87,3 +100,72 @@ input[type=submit]{
 input[type=submit]:hover{
     transform: scale(1.2);
 }
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+  }
+ 
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+ 
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #292929a2;
+    border-radius: 3px;
+  }
+ 
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #292929;
+  }
+.f30{
+    font-size: 30pt !important;
+}
+main{
+    background-color: yellow;
+    height: 100px auto;
+    width: 100%;
+    padding: 10px;
+    .restaurantes{
+        height: 100px auto;
+        width: 100%;
+        background-color:bisque;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        .resto{
+            position: relative;
+            width: 100%;
+            flex: 0 0 160px ;
+            display: flex;
+            background-color: chocolate;
+            
+            .imagen_resto{
+                position: absolute;
+                height: 100%;
+                width: 45%;
+                background-image: url(/img/Image-empty-state.jpg);
+                background-size: cover;
+                float: left;
+                z-index: 0;
+            }
+            .desc_resto{
+                display: flex;
+                flex-direction: column;
+                position: absolute;   
+                width: 60%;
+                height: 100%;
+                right: 0;
+                border-radius: 0 0 0 25px;
+                background-color: rgb(255, 255, 255);
+                float: right;
+                z-index: 1;
+            }
+        }
+    }
+    
+    
+}
+
