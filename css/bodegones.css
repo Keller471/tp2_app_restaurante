@@ -12,11 +12,12 @@ body{
 header{
     height: 60%;
     width: 100%;
+   
+}
+.portada{
     background-image: url(/img/Image-empty-state.jpg);
     background-position: center;
     background-size: cover;
-}
-.portada{
     height: 70%;
     width: 100%;
     position: relative;
