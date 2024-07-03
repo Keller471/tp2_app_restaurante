@@ -15,7 +15,7 @@ header{
    
 }
 .portada{
-    background-image: url(./img/Image-empty-state.jpg);
+    background-image: url(../img/FIID_21_12_22_SALAZAR_6253.jpg);
     background-position: center;
     background-size: cover;
     height: 70%;
@@ -23,11 +23,10 @@ header{
     position: relative;
 }
 nav.categorias{
-
     height: 30%;
     width: 100% auto;
     background-color: white;
-    padding: 40px;
+    padding-top: 20px;
     display: flex;
     justify-content: flex-start;
     gap: 30;
@@ -63,6 +62,7 @@ a.btn-cat{
     left: 5%;
     bottom: 20%;
     transition: all 2s ease-in-out;
+    color: white;
 }
 
 .buscador{
